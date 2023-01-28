@@ -43,7 +43,7 @@
 
 (defun org-link-style--export (style-id text format info)
   (cl-destructuring-bind (&key background foreground &allow-other-keys)
-      (org-protocol-convert-query-to-plist style-id)
+      (org-link-style--id-to-face-plist style-id)
     (when background
       (setq background (org-link-style--org-to-html-hex background)))
     (when foreground
