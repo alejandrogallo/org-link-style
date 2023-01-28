@@ -2,8 +2,12 @@
 
 ;; Copyright (C) 2023  Alejandro Gallo
 
-;; Author: Alejandro Gallo <gallo@enkum>
+;; SPDX-License-Identifier: MIT
+;; Author: Alejandro Gallo <aamsgallo@gmail.com>
+;; Version: 1.0
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: hypermedia, tex, faces, extensions
+;; URL: https://github.com/alejandrogallo/org-link-style
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +24,7 @@
 
 ;;; Commentary:
 
-;;
+;; TODO
 
 ;;; Code:
 
