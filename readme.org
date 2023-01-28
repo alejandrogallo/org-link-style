@@ -17,4 +17,27 @@ then you would write
 [[style:foreground=purple4&background=#e066ff][This is a red text]]
 #+end_src
 
+This would get exported to latex for instance like
+
+#+begin_src latex
+\colorbox[HTML]{e066ff}{\textcolor[HTML]{551a8b}{This is a red text}}
+#+end_src
+
 and you would also see this face within org-mode.
+
+
+* Syntax
+
+** TODO Attribute syntax
+** Face name syntax
+
+You can provide an already defined face name to the link
+by prepending an =@= sign to the face name.
+For instance you could use the =alert-high-face=
+in a text like so
+
+#+begin_src org
+[[style:@alert-high-face][This is a text with an alert face]]
+#+end_src
+
+
