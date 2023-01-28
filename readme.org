@@ -1,4 +1,20 @@
 #+title: org-link-style
 
+* Introduction
 
-[[style:foreground=red][This]] is a package
+[[style:foreground=red][This]] is a package introduces an org-link type =style=, in order to
+render the description of the links with a given face.
+It then also renders the same colors into =latex=, =html= and =markdown=
+through the org-exporting mechanisms.
+
+Let us say you want to have something in an html or latex document that resembles
+
+[[file:images/Introduction/this-is-a-red-text.png]]
+
+then you would write
+
+#+begin_src org
+[[style:foreground=purple4&background=#e066ff][This is a red text]]
+#+end_src
+
+and you would also see this face within org-mode.
