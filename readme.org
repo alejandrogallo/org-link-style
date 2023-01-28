@@ -37,7 +37,7 @@ For instance you could use the =alert-high-face=
 in a text like so
 
 #+begin_src org
-[[style:@alert-high-face][This is a text with an alert face]] blah
+[[style:@alert-high-face][This is a text with an alert face]]
 #+end_src
 
 which in this case would get exported to html as
