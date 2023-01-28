@@ -25,10 +25,6 @@
 ;;; Code:
 
 
-
-(provide 'org-link-style)
-;;; org-link-style.el ends here
-
 (require 'org-protocol)
 
 (defun org-link-style--org-to-html-hex (rgb)
@@ -94,3 +90,7 @@
              (let ((fg (read-color "Foreground: ")))
                (format "style:foreground=%s" fg)))
  :face #'org-link-style--id-to-face-plist)
+
+
+(provide 'org-link-style)
+;;; org-link-style.el ends here
