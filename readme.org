@@ -1,0 +1,4 @@
+#+title: org-link-style
+
+
+[[style:foreground=red][This]] is a package
