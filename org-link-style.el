@@ -78,8 +78,13 @@
  "style"
  :export #'org-link-style--export
  :complete (lambda (&optional arg)
-             (let ((fg (read-color "Foreground: ")))
-               (format "style:foreground=%s" fg)))
+             (let ((fg (let ((color (read-color "Foreground: " nil t)))
+                         (unless (string-empty-p color)
+                           (format "foreground=%s" color))))
+                   (bg (let ((color (read-color "Background: " nil t)))
+                         (unless (string-empty-p color)
+                           (format "background=%s" color)))))
+               (concat "style:" (string-join (list fg bg) "&"))))
  :face #'org-link-style--id-to-face-plist)
 
 
