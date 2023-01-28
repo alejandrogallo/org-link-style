@@ -40,4 +40,10 @@ in a text like so
 [[style:@alert-high-face][This is a text with an alert face]]
 #+end_src
 
+which in this case would get exported to html as
 
+#+begin_src html
+<p>
+<span style='color: #972500;'>This is a text with an alert face</span>
+</p>
+#+end_src
